@@ -63,7 +63,7 @@ if (isset($_FILES['image_file'])) {
         echo 'Failed to upload image file';
     }
 }
-// Handle Video File
+// Handles Video File
 if (isset($_FILES['video_file'])) {
     $uploaded_video_file = $upload_directory . basename($_FILES['video_file']['name']);
     $temporary_file = $_FILES['video_file']['tmp_name'];

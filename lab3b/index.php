@@ -51,7 +51,7 @@
             <input type="file" name="image_file" accept="image/jpeg" /> 
             </p>
         </div>
-
+      <!-- video file -->
         <div class="p-card">
 
             <h3>Video File</h3>
