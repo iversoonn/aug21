@@ -21,20 +21,50 @@
   <div class="col">
     <h4>File Upload</h4>
 
-    <form>
+    <form method="post" action="uploaded.php" enctype="multipart/form-data">
         <div class="p-card">
             <h3>Text File</h3>
             <p class="p-card__content">
-            <input type="file" name="text_file" accept=".txt" /> 
-            <!-- enctype="multipart/formdata" -->
+             <input type="file" name="text_file" accept=".txt" />
+            </p>
+        </div>
+
+        <div class="p-card">
+            <h3>PDF File</h3>
+            <p class="p-card__content">
+             <input type="file" name="pdf_file" accept="application/pdf" />
+            </p>
+        </div>
+
+        <div class="p-card">
+
+            <h3>Audio File</h3>
+            <p class="p-card__content">
+            <input type="file" name="audio_file" accept="audio/mpeg" /> 
+            </p>
+        </div>
+
+        <div class="p-card">
+
+            <h3>Image File</h3>
+            <p class="p-card__content">
+            <input type="file" name="image_file" accept="image/jpeg" /> 
+            </p>
+        </div>
+
+        <div class="p-card">
+
+            <h3>Video File</h3>
+            <p class="p-card__content">
+            <input type="file" name="video_file" accept="video/mp4" /> 
             </p>
         </div>
 
         <div>
-            <button>
-                Upload
-            </button>
+            <button type="submit">Upload </button>
         </div>
+
+
     </form>
     </div>
   <div class="col">

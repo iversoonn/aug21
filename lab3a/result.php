@@ -18,6 +18,8 @@ $agree = $_POST['agree'];
 // $answer = $_POST['answer'];
 $answers = $_POST['answers'];
 
+
+
 // if (!is_null($answer)) {
 //     $answers .= $answer;
 // }
@@ -28,6 +30,7 @@ $answers = $_POST['answers'];
  $hero_class = $score > 2 ? 'is-success' : 'is-danger';
  $questions = retrieve_questions();
 ?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -84,19 +87,27 @@ $answers = $_POST['answers'];
             <tbody>
                 <?php foreach ($questions['questions'] as $index => $question): ?>
                     <tr>
-                        <td><?php echo htmlspecialchars($question['question']); ?></td>
+                        <td><?php echo ($question['question']); ?></td>
                         <td><?php 
-                            // Extract the correct option
                             $correct_option = array_filter($question['options'], function($option) {
                                 return !empty($option['correct']) && $option['correct'] === true;
                             });
                             $correct_answer = reset($correct_option);
-                            echo htmlspecialchars($correct_answer['value'] ?? 'No correct answer');
+                            echo ($correct_answer['value'] ?? 'No correct answer');
                         ?></td>
                         <td><?php 
-                            // Display the user's answer or 'Not Answered'
-                            $user_answer = $answers[$index] ?? 'Not Answered';
-                            echo htmlspecialchars($user_answer);
+                            $user_answer_letter = isset($answers[$index]) ? $answers[$index] : null;
+                            $user_answer_value = 'Did not answer';
+                            if ($user_answer_letter) {
+                                foreach ($question['options'] as $option) {
+                                    if ($option['key'] === $user_answer_letter) {
+                                        $user_answer_value = $option['value'];
+                                        break;
+                                    }
+                                }
+                            }
+                            
+                            echo htmlspecialchars($user_answer_value);
                         ?></td>
                     </tr>
                 <?php endforeach; ?>

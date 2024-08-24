@@ -34,7 +34,11 @@ function compute_score($answers = []) {
 
     $score = 0;
     for ($i = 0; $i < MAX_QUESTION_NUMBER; $i++) {
-        if ($correct_answers[$i] == $answers[$i]) {
+        // Ensure the index exists in both arrays before comparison
+        $user_answer = isset($answers[$i]) ? $answers[$i] : null;
+        $correct_answer = isset($correct_answers[$i]) ? $correct_answers[$i] : null;
+
+        if ($user_answer === $correct_answer) {
             $score += 1;
         }
     }

@@ -5,19 +5,19 @@
             "options": [
                 {
                     "key": "A",
-                    "value": "December 25"
+                    "value": "December 25", "correct": false
                 },
                 {
                     "key": "B",
-                    "value": "November 1"
+                    "value": "November 1", "correct": false
                 },
                 {
                     "key": "C",
-                    "value": "May 4"
+                    "value": "May 4" , "correct": false
                 },
                 {
                     "key": "D",
-                    "value": "June 12"
+                    "value": "June 12" , "correct": true
                 }
             ]
         },
@@ -26,19 +26,19 @@
             "options": [
                 {
                     "key": "A",
-                    "value": "1890"
+                    "value": "1890" , "correct": false
                 },
                 {
                     "key": "B",
-                    "value": "1942"
+                    "value": "1942" , "correct": true
                 },
                 {
                     "key": "C",
-                    "value": "1950"
+                    "value": "1950" , "correct": false
                 },
                 {
                     "key": "D",
-                    "value": "1560"
+                    "value": "1560" , "correct": false
                 }
             ]
         },
@@ -47,19 +47,19 @@
             "options": [
                 {
                     "key": "A",
-                    "value": "Albay"
+                    "value": "Albay" , "correct": true
                 },
                 {
                     "key": "B",
-                    "value": "Batanes"
+                    "value": "Batanes" , "correct": false
                 },
                 {
                     "key": "C",
-                    "value": "Cagayan"
+                    "value": "Cagayan" , "correct": false
                 },
                 {
                     "key": "D",
-                    "value": "Davao"
+                    "value": "Davao" , "correct": false
                 }
             ]
         },
@@ -68,19 +68,19 @@
             "options": [
                 {
                     "key": "A",
-                    "value": "Laong Laan"
+                    "value": "Laong Laan" , "correct": false
                 },
                 {
                     "key": "B",
-                    "value": "Plaridel"
+                    "value": "Plaridel" , "correct": true
                 },
                 {
                     "key": "C",
-                    "value": "Leon Guerero"
+                    "value": "Leon Guerero" , "correct": false
                 },
                 {
                     "key": "D",
-                    "value": "Agila"
+                    "value": "Agila" , "correct": false
                 }
             ]
         },
@@ -89,19 +89,19 @@
             "options": [
                 {
                     "key": "A",
-                    "value": "Bataan"
+                    "value": "Bataan" , "correct": false
                 },
                 {
                     "key": "B",
-                    "value": "Subic"
+                    "value": "Subic" , "correct": false
                 },
                 {
                     "key": "C",
-                    "value": "Pampanga"
+                    "value": "Pampanga" , "correct": true
                 },
                 {
                     "key": "D",
-                    "value": "Cavite"
+                    "value": "Cavite" , "correct": false
                 }
             ]
         }
