@@ -44,7 +44,15 @@
             </p>
         </div>
 
+        <div class="p-card">
 
+            <h3>Image File</h3>
+            <p class="p-card__content">
+            <input type="file" name="image_file" accept="image/jpeg" /> 
+            </p>
+        </div>
+
+        
 
         <div>
             <button type="submit">Upload </button>
