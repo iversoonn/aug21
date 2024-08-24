@@ -36,7 +36,17 @@
             </p>
         </div>
 
-               <div>
+        <div class="p-card">
+
+            <h3>Audio File</h3>
+            <p class="p-card__content">
+            <input type="file" name="audio_file" accept="audio/mpeg" /> 
+            </p>
+        </div>
+
+
+
+        <div>
             <button type="submit">Upload </button>
         </div>
 
